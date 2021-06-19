@@ -261,13 +261,18 @@
          var update = function() {
       requestAnimationFrame(update);
   
-      // 全体を回転させる
-        //all.rotation.x += 0.01;
-        car.rotation.y += 0.005;;
-  
-      renderer.render(scene, camera);
-    };
-    update();
+     　var origin_pos = car.position.clone();
+
+// tween.on('update')内に以下を追記
+  var axis = new THREE.Vector3(0, 0, 200); // 回転軸
+  var rad90 = Math.PI 2; 
+  var rad = rad360 * y;
+  var new_q = origin_quaternion.clone()
+  var target = new THREE.Quaternion();
+  // 指定した軸に対して回転を加える
+  target.setFromAxisAngle(car, rad);
+  new_q.multiply(target);
+  car.quaternion.copy(new_q)
 
        
 
