@@ -257,6 +257,17 @@
         sprite3.position.z = -500;
         sprite3.scale.set(300,300,300);
         scene.add(sprite3);
+        
+         var update = function() {
+      requestAnimationFrame(update);
+  
+      // 全体を回転させる
+        //all.rotation.x += 0.01;
+        car.rotation.y += 0.005;;
+  
+      renderer.render(scene, camera);
+    };
+    update();
 
        
 
