@@ -47,8 +47,8 @@
       const axisHelper = new THREE.AxisHelper(200,50);
       scene.add(axisHelper);
         //平面を作成
-       　const Geometry = new THREE.BoxGeometry(10,0,30);
-    const Material = new THREE.MeshBasicMaterial({color: 0xff00});
+       　const geometry = new THREE.BoxGeometry(10,0,30);
+    const material = new THREE.MeshBasicMaterial({color: 0xff00});
     const cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
         
