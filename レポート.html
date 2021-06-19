@@ -96,7 +96,6 @@
         const material12 = new THREE.MeshPhongMaterial({color:0x00ff00});
         const cube7 = new THREE.Mesh(geometry12, material12);
       cube7.position.set(-250,10,0);
-        cube7.rotation.set(Math.PI/0.5,0,0);
          scene.add(cube7);
         
         //ブロック作成
@@ -116,8 +115,8 @@
         const material15 = new THREE.MeshPhongMaterial({color:0x000000});
         const box2 = new THREE.Mesh(geometry15, material15);
       box2.position.set(10,10,-10);
-        box2.rotation.set(Math.PI/0.5,0,0);
-         scene.add(box2);
+        scene.add(box2);
+        box2.rotation.set(Math.PI/2,0,0);
         
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
