@@ -258,24 +258,16 @@
         sprite3.scale.set(300,300,300);
         scene.add(sprite3);
         
-         var update = function() {
-      requestAnimationFrame(update);
-  
-     　var origin_pos = car.position.clone();
+        // 1. 回転させたいObjectのQuaternionを取得する
+var quaternion = car.quaternion;
 
-// tween.on('update')内に以下を追記
-  var axis = new THREE.Vector3(0, 0, 200); // 回転軸
-  var rad90 = Math.PI /2; 
-  var rad = rad360 * y;
-  var new_q = origin_quaternion.clone()
-  var target = new THREE.Quaternion();
-  // 指定した軸に対して回転を加える
-  target.setFromAxisAngle(car, rad);
-  new_q.multiply(target);
-  car.quaternion.copy(new_q)
+// 2. 回転を加えるためのQuaternionを作成する
+var car = new THREE.Quaternion();
+var axis = new THREE.Vector3(0, 0, 150).normalize();
+car.setFromAxisAngle(axis, 2);
 
-       
-
+// 3. 回転させる
+quaternion.multiply(car);
         tick();
         // 毎フレーム時に実行されるループイベントです
         function tick() {
