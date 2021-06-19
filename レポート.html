@@ -46,6 +46,13 @@
 
       const axisHelper = new THREE.AxisHelper(200,50);
       scene.add(axisHelper);
+        
+        //テクスチャー読み込み
+        var textureLoader = new THREE.TextureLoader();  
+        var texture = textureLoader.load("img/road.png");
+        var mat = new THREE.MeshPhongMaterial();
+        mat.map = texture;
+
         //平面を作成
        　const geometry = new THREE.BoxGeometry(100,0,300);
     const material = new THREE.MeshBasicMaterial({color: 0xff00});
