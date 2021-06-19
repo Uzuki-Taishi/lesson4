@@ -93,10 +93,17 @@
          scene.add(cube6);
         
         const geometry12 = new THREE.BoxGeometry(20,20,500);
-        const material12 = new THREE.MeshBasicMaterial({color:0x00ff00});
+        const material12 = new THREE.MeshPhongMaterial({color:0x00ff00});
         const cube7 = new THREE.Mesh(geometry12, material12);
       cube7.position.set(-250,10,0);
          scene.add(cube7);
+        
+        //ブロック作成
+         const geometry13 = new THREE.BoxGeometry(90,10,100);
+        const material13 = new THREE.MeshPhongMaterial({color:0xff0000});
+        const box = new THREE.Mesh(geometry9, material9);
+      box.position.set(0,30,0);
+         scene.add(box);
         
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
