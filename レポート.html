@@ -105,6 +105,12 @@
       box.position.set(0,30,0);
          scene.add(box);
         
+        const geometry14 = new THREE.BoxGeometry(50,15,70);
+        const material14 = new THREE.MeshPhongMaterial({color:0xff0000});
+        const box1 = new THREE.Mesh(geometry14, material14);
+      box1.position.set(0,50,0);
+         scene.add(box1);
+        
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
