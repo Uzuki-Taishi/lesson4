@@ -51,12 +51,13 @@
         const geometry = new THREE.BoxGeometry(500,0,500);
     const material = new THREE.MeshBasicMaterial({color: 0xff00});
     const cube = new THREE.Mesh(geometry, mat);
-        scene.add(cube);
+       
         
          const cube = new THREE.Cube(cube);
         sprite0.position.x = 0;
         sprite0.position.y = 1;
         sprite0.position.z = 0;
+         scene.add(cube);
         
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
