@@ -262,9 +262,9 @@
 var quaternion = car.quaternion;
 
 // 2. 回転を加えるためのQuaternionを作成する
-var car = new THREE.Quaternion();
+var target = new THREE.Quaternion();
 var axis = new THREE.Vector3(0, 0, 150).normalize();
-car.setFromAxisAngle(axis, 2);
+target.setFromAxisAngle(axis, 2);
 
 // 3. 回転させる
 quaternion.multiply(car);
