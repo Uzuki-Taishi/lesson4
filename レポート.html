@@ -125,6 +125,20 @@
         scene.add(box3);
         box3.rotation.z=Math.PI/2;
         
+        const geometry17 = new THREE.CylinderGeometry(20,20,5,0);
+        const material17 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box4 = new THREE.Mesh(geometry17, material17);
+      box4.position.set(-35,20,-160);
+        scene.add(box4);
+        box3.rotation.z=Math.PI/2;
+        
+        const geometry18 = new THREE.CylinderGeometry(20,20,5,0);
+        const material18 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box5 = new THREE.Mesh(geometry18, material18);
+      box5.position.set(35,20,-160);
+        scene.add(box5);
+        box3.rotation.z=Math.PI/2;
+        
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
