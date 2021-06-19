@@ -47,10 +47,10 @@
       const axisHelper = new THREE.AxisHelper(200,50);
       scene.add(axisHelper);
         //平面を作成
-       　var Geometry = new THREE.BoxGeometry(10,0,30);
-    var BoxMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
-    var box = new THREE.Mesh(geometry, material);
-  box.position.set(0,0,0)
+       　const Geometry = new THREE.BoxGeometry(10,0,30);
+    const Material = new THREE.MeshBasicMaterial({color: 0xff00});
+    const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
         
         // 木0をスプライトで作成
         var textureLoader = new THREE.TextureLoader();  
