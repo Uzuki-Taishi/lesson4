@@ -102,26 +102,26 @@
          const geometry13 = new THREE.BoxGeometry(70,30,100);
         const material13 = new THREE.MeshPhongMaterial({color:0xff0000});
         const box = new THREE.Mesh(geometry13, material13);
-      box.position.set(0,30,0);
+      box.position.set(0,30,-180);
          scene.add(box);
         
         const geometry14 = new THREE.BoxGeometry(50,30,70);
         const material14 = new THREE.MeshPhongMaterial({color:0xff0000});
         const box1 = new THREE.Mesh(geometry14, material14);
-      box1.position.set(0,50,0);
+      box1.position.set(0,50,-180);
          scene.add(box1);
         
         const geometry15 = new THREE.CylinderGeometry(20,20,5,0);
         const material15 = new THREE.MeshPhongMaterial({color:0x000000});
         const box2 = new THREE.Mesh(geometry15, material15);
-      box2.position.set(35,20,-30);
+      box2.position.set(35,20,-160);
         scene.add(box2);
         box2.rotation.z=Math.PI/2;
         
          const geometry16 = new THREE.CylinderGeometry(20,20,5,0);
         const material16 = new THREE.MeshPhongMaterial({color:0x000000});
         const box3 = new THREE.Mesh(geometry16, material16);
-      box3.position.set(-35,20,-30);
+      box3.position.set(-35,20,-160);
         scene.add(box3);
         box3.rotation.z=Math.PI/2;
         
