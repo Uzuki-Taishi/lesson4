@@ -259,10 +259,9 @@
         scene.add(sprite3);
         
         // 1. 回転させたいObjectのQuaternionを取得する
-var quaternion = car.quaternion;
+car.uesQuaternion=true;
 
 // 2. 回転を加えるためのQuaternionを作成する
-var target = new THREE.Quaternion();
 var axis = new THREE.Vector3(0, 2, 150).normalize();
 target.setFromAxisAngle(axis, 2);
 
