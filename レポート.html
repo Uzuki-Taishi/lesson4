@@ -47,6 +47,14 @@
       const axisHelper = new THREE.AxisHelper(200,50);
       scene.add(axisHelper);
         
+        //平面
+        const geometry = new THREE.BoxGeometry(500,1,500);
+    const material = new THREE.MeshBasicMaterial({color: 0xff00});
+    const cube = new THREE.Mesh(geometry, mat);
+        scene.add(cube);
+        
+        
+        
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
