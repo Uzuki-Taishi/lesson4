@@ -188,18 +188,7 @@
      car.add(box10); //タイヤを追加
      car.add(box11); //タイヤを追加
         scene.add(car);
-     car.position.set(0,0,0);//車グループの原点の位置
-        
-         
-         var update = function() {
-      requestAnimationFrame(update);
-  
-      // 全体を回転させる
-        //all.rotation.x += 0.01;
-        car.rotation.y += 1;;
-  
-      renderer.render(scene, camera);
-    };
+     car.position.set(0,0,0);//車グループの原点の位
         
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
@@ -268,6 +257,17 @@
         sprite3.position.z = -500;
         sprite3.scale.set(300,300,300);
         scene.add(sprite3);
+        
+         var update = function() {
+      requestAnimationFrame(update);
+  
+      // 全体を回転させる
+        car.rotation.y += 0.005;;
+  
+      renderer.render(scene, camera);
+    };
+        update();
+      }
         
         tick();
         // 毎フレーム時に実行されるループイベントです
