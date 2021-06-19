@@ -190,6 +190,15 @@
         scene.add(car);
      car.position.set(0,0,0);//車グループの原点の位置
         
+         
+        var update = function() {
+    requestAnimationFrame(update);
+
+    // 箱を回転させる
+    box.rotation.y += 1;
+
+    renderer.render(scene, camera);
+  };
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
