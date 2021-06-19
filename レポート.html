@@ -179,6 +179,16 @@
         scene.add(box11);
         box11.rotation.z=Math.PI/2;
         
+        //carのオブジェクト
+   const car = new THREE.Group();
+     car.add(box6);//車を追加
+     car.add(box7); //車を追加
+     car.add(box8); //タイヤを追加
+     car.add(box9); //タイヤを追加
+     car.add(box10); //タイヤを追加
+     car.add(box11); //タイヤを追加
+     .position.set(0,1,0);//車グループの原点の位置
+        
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
