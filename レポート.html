@@ -50,8 +50,8 @@
         //平面
         const geometry = new THREE.BoxGeometry(500,0,500);
     const material = new THREE.MeshBasicMaterial({color: 0xff00});
-    const cube0 = new THREE.Mesh(geometry, mat);
-      cube.position.y=1;
+    const cube0 = new THREE.Mesh(geometry, material);
+      cube0.position.set(0,1,0);
          scene.add(cube0);
         
         //テクスチャー読み込み
