@@ -58,7 +58,7 @@
         const geometry5 = new THREE.BoxGeometry(10,0,40);
         const material5 = new THREE.MeshBasicMaterial;
         const cube1 = new THREE.Mesh(geometry5, material5);
-      cube1.position.set(0,3,0);
+      cube1.position.set(0,2,0);
          scene.add(cube1);
         
          //平面
@@ -73,6 +73,18 @@
         const cube3 = new THREE.Mesh(geometry7, material7);
       cube3.position.set(0,2,-120);
          scene.add(cube3);
+        
+         const geometry8 = new THREE.BoxGeometry(10,0,40);
+        const material8 = new THREE.MeshBasicMaterial;
+        const cube4 = new THREE.Mesh(geometry8, material8);
+      cube4.position.set(0,2,-240);
+         scene.add(cube4);
+        
+         const geometry9 = new THREE.BoxGeometry(10,0,40);
+        const material9 = new THREE.MeshBasicMaterial;
+        const cube5 = new THREE.Mesh(geometry9, material9);
+      cube5.position.set(0,2,240);
+         scene.add(cube5);
         
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
