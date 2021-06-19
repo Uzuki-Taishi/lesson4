@@ -47,9 +47,9 @@
       const axisHelper = new THREE.AxisHelper(200,50);
       scene.add(axisHelper);
         //平面を作成
-       　const Geometry = new THREE.BoxGeometry(10,0,30);
-    var planeMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
-    var plane = new THREE.Mesh(Geometry,Material);
+       　var Geometry = new THREE.BoxGeometry(10,0,30);
+    var BoxMaterial = new THREE.MeshBasicMaterial({color: 0xff00});
+    var Box = new THREE.Mesh(Geometry,Material);
     plane.position.set(0,0,0);
         
         // 木0をスプライトで作成
