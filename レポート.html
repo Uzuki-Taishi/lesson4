@@ -139,6 +139,46 @@
         scene.add(box5);
         box5.rotation.z=Math.PI/2;
         
+        const geometry19 = new THREE.BoxGeometry(70,30,100);
+        const material19 = new THREE.MeshPhongMaterial({color:0xff0000});
+        const box6 = new THREE.Mesh(geometry19, material19);
+      box6.position.set(0,30,180);
+         scene.add(box6);
+        
+        const geometry20 = new THREE.BoxGeometry(50,30,70);
+        const material20 = new THREE.MeshPhongMaterial({color:0xff0000});
+        const box7 = new THREE.Mesh(geometr20, material20);
+      box7.position.set(0,50,180);
+         scene.add(box7);
+        
+        const geometry21 = new THREE.CylinderGeometry(20,20,5,0);
+        const material21 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box8 = new THREE.Mesh(geometr21, material21);
+      box8.position.set(35,20,210);
+        scene.add(box8);
+        box8.rotation.z=Math.PI/2;
+        
+         const geometry22 = new THREE.CylinderGeometry(20,20,5,0);
+        const material22 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box9 = new THREE.Mesh(geometry22, material2);
+      box9.position.set(-35,20,210);
+        scene.add(box9);
+        box9.rotation.z=Math.PI/2;
+        
+        const geometry23 = new THREE.CylinderGeometry(20,20,5,0);
+        const material23 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box10 = new THREE.Mesh(geometry23, material23);
+      box10.position.set(-35,20,150);
+        scene.add(box10);
+        box10.rotation.z=Math.PI/2;
+        
+        const geometry24 = new THREE.CylinderGeometry(20,20,5,0);
+        const material24 = new THREE.MeshPhongMaterial({color:0x000000});
+        const box11 = new THREE.Mesh(geometry24, material24);
+      box11.position.set(35,20,150);
+        scene.add(box11);
+        box11.rotation.z=Math.PI/2;
+        
         //テクスチャー読み込み
         var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/suna.jpg");
@@ -207,6 +247,7 @@
         sprite3.scale.set(300,300,300);
         scene.add(sprite3);
 
+       
 
         tick();
         // 毎フレーム時に実行されるループイベントです
